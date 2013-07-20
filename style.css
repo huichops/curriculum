@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main style */
+html {
+	background-color: #FAFAFA;
+	color: #555;
+	font-family: 'News Cycle', 'Open sans', sans-serif, Helvetica;
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	font-size: 1.2em;
+	margin: 0 auto;
+	max-width: 900px; 
+	padding: 10px 40px;
+	border-left: 20px solid #CA0000;
+}
+/* Header */
+header {
+	width: 100%;
+}
+
+h3 {
+	color: #555;
+	background-color: #EFEFEF;
+	border-radius: 5px;
+	width: 100%;
+}
+
+#info {
+	float:left;
+	margin-bottom: 20px;
+}
+
+#info h1 {
+	font-size: 2.3em;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#info h3 {
+	font-size: 1.25em;
+	padding: 5px 10px;
+	
+
+}
+
+#photo {
+	float: right;
+
+}
+
+/* content */
+
+section {
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom:  1px dotted #CCC;
+}
+
+section h1 {
+	font-weight: bold;
+	line-height: 1.2em;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+section p {
+	margin-left: 15px;
+	line-height: 1.5em;
+	text-align: justify;
+	font-size: 0.85em;
+	text-indent: 2em;
+}
+
+#skills dl {
+	margin-left: 15px;
+}
+#skills dl dt {
+	font-size: 1.1em;
+	clear: left;
+	display: block;
+	float: left;
+	padding: 5px;
+
+}
+
+#skills dl dd {
+	font-size: 0.7em;
+	background-color: #EFEFEF;
+	clear: left;
+	max-width: 400px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	border-radius: 100px;
+}
+
+#skills dl dd span {
+	padding-left: 3%;
+	display: block;
+	padding-bottom: 3px;
+}
+
+#experience article {
+	float: left;
+	clear: left;
+	margin-left: 15px;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+#experience h2 {
+	font-weight: bold;
+}
+
+#experience h3 {
+	font-size: 0.8em;
+	padding: 3px 5px;
+	border-radius: 3px;
+}
+
+.expand {
+	border-radius: 100px;
+    margin: 2px 0;
+    background: #FFEE55;
+    box-shadow: 2px 0px 5px 1px rgba(255,238,85, 0.4);
+
+}
+
+.html5 {
+	width: 65%;
+    -moz-animation: html5 1.5s ease-out;
+    -webkit-animation: html5 1.5s ease-out;
+}
+
+.css {
+	width: 60%;
+	-moz-animation: css 2s ease-out;
+    -webkit-animation: css 2s ease-out;
+}
+
+.js {
+	width: 45%;
+	-moz-animation: js 2s ease-out;
+    -webkit-animation: js 2s ease-out;
+}
+
+.jquery {
+	width: 10%;
+	-moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+.php {
+	width: 20%;
+	-moz-animation: php 2s ease-out;
+    -webkit-animation: php 2s ease-out;
+}
+.cake {
+	width: 15%;
+	-moz-animation: cake 2s ease-out;
+    -webkit-animation: cake 2s ease-out;
+}
+.c {
+	width: 20%;
+	-moz-animation: c 2s ease-out;
+    -webkit-animation: c 2s ease-out;
+}
+.java {
+	width: 10%;
+	-moz-animation: java 2s ease-out;
+    -webkit-animation: java 2s ease-out;
+}
+
+.crafty {
+	width: 15%;
+	-moz-animation: crafty 2s ease-out;
+    -webkit-animation: crafty 2s ease-out;
+}
+
+.mysql {
+	width: 30%;
+	-moz-animation: mysql 2s ease-out;
+    -webkit-animation: mysql 2s ease-out;
+}
+
+@-moz-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    };
+}
+
+@-webkit-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    };
+}
+
+
+.clearfix {
+	display: inline-block;
+}
