@@ -66,6 +66,7 @@ body {
 /* Header */
 header {
 	width: 100%;
+	clear: both;
 }
 
 h3 {
@@ -182,11 +183,54 @@ section p {
     -webkit-animation: html5 1.5s ease-out;
 }
 
+@-moz-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    };
+}
+
+@-webkit-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    };
+}
+
 .css {
 	width: 60%;
 	-moz-animation: css 2s ease-out;
     -webkit-animation: css 2s ease-out;
 }
+
+@-moz-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
+@-webkit-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
 
 .js {
 	width: 45%;
@@ -194,11 +238,56 @@ section p {
     -webkit-animation: js 2s ease-out;
 }
 
+@-moz-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
+@-webkit-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
 .jquery {
 	width: 10%;
 	-moz-animation: jquery 2s ease-out;
     -webkit-animation: jquery 2s ease-out;
 }
+
+@-moz-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
+@-webkit-keyframes css
+css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    };
+}
+
 .php {
 	width: 20%;
 	-moz-animation: php 2s ease-out;
@@ -232,26 +321,73 @@ section p {
     -webkit-animation: mysql 2s ease-out;
 }
 
-@-moz-keyframes html5 {
-    0% {
-        width: 0px;
-    }
+@media only screen and (max-width: 740px) {  
+ 	section {
+ 		font-size: 0.95em;
+ 	}
 
-    100% {
-        width: 65%;
-    };
-}
+ 	#skills dl dd {
+		max-width: 350px;
+	}
+}  
 
-@-webkit-keyframes html5 {
-    0% {
-        width: 0px;
-    }
 
-    100% {
-        width: 65%;
-    };
-}
+@media only screen and (max-width: 570px) {  
 
+ 	#skills dl dd {
+		max-width: 300px;
+	}
+
+	section h1 {
+		font-size: 1.4em;
+	}
+} 
+
+
+@media only screen and (max-width: 570px) {  
+
+ 	#skills dl dd {
+		max-width: 300px;
+	}
+
+	section h1 {
+		font-size: 1.4em;
+	}
+
+	header {
+		font-size: 0.9em;
+		text-align: center;
+
+	}
+} 
+
+@media only screen and (max-width: 320px) {  
+
+ 	#skills dl dd {
+		max-width: 200px;
+	}
+
+	#skills dl {
+		margin-left: 5px;
+	}
+
+	body {
+		padding-left: 25px;
+		font-size: 1.2 em;
+		border-left: 10px solid #CA0000;
+	}
+
+	section h1 {
+		margin-bottom: 10px;
+	}
+
+	section p {
+		font-size: 0.8em;
+	}
+	#experience article {
+		margin-left: 5px;
+	}
+} 
 
 .clearfix {
 	display: inline-block;
