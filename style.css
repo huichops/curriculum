@@ -153,22 +153,41 @@ section p {
 
 #experience article {
 	float: left;
-	clear: left;
 	margin-left: 15px;
-	max-width: 400px;
+	max-width: 600px;
 	min-width: 200px;
+	margin-bottom: 20px;
 }
 
 #experience h2 {
+	width: 150px;
+	margin: 5px 0;
 	font-weight: bold;
 }
 
 #experience h3 {
+	max-width: 250px;
 	font-size: 0.8em;
-	padding: 3px 5px;
-	border-radius: 3px;
+	padding: 5px 10px;
+	border-radius: 5px;
 }
 
+#experience p {
+	margin: 0;
+	text-indent: 0;
+}
+
+.time, .expcontent {
+	clear: none;
+	float: left;
+}
+
+time {
+	clear: left;
+	float: left;
+	display: block;
+	max-width: 200px;
+}
 .expand {
 	border-radius: 100px;
     margin: 2px 0;
@@ -356,8 +375,8 @@ css {
 
 	header {
 		font-size: 0.9em;
-		text-align: center;
-
+		text-align: center
+;
 	}
 } 
 
