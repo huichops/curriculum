@@ -153,9 +153,9 @@ section p {
 
 #experience article {
 	float: left;
-	margin-left: 15px;
-	max-width: 600px;
-	min-width: 200px;
+	clear: both;
+	margin-left: 0;
+	max-width: 700px;
 	margin-bottom: 20px;
 }
 
@@ -166,7 +166,7 @@ section p {
 }
 
 #experience h3 {
-	max-width: 250px;
+	width: 200px;
 	font-size: 0.8em;
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -175,19 +175,32 @@ section p {
 #experience p {
 	margin: 0;
 	text-indent: 0;
-}
+} 
 
 .time, .expcontent {
 	clear: none;
 	float: left;
 }
 
+.time {
+	margin-top: 10px;
+}
+
 time {
 	clear: left;
 	float: left;
 	display: block;
-	max-width: 200px;
+	min-width: 120px;
+	text-align: center;
+	font-size: 0.8em;
+	vertical-align: middle;
 }
+
+#hobbies li {
+	margin-left: 20px;
+	padding: 5px 0;
+}
+
 .expand {
 	border-radius: 100px;
     margin: 2px 0;
@@ -375,8 +388,16 @@ css {
 
 	header {
 		font-size: 0.9em;
-		text-align: center
-;
+		text-align: center;
+	}
+
+	.time, expcontent {
+		float: none;
+	}
+	time {
+		clear: none;
+		text-align: left;
+		min-width: 80px;
 	}
 } 
 
@@ -404,7 +425,6 @@ css {
 		font-size: 0.8em;
 	}
 	#experience article {
-		margin-left: 5px;
 	}
 } 
 
