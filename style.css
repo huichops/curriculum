@@ -177,6 +177,20 @@ section p {
 	text-indent: 0;
 } 
 
+#experience a {
+    text-decoration: none;
+    color: #555; 
+    border-bottom: 1px dashed #555;
+	-moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+#experience a:hover {
+    color: #CA0000; 
+    background-color: #FFEE55;
+    border-bottom: 1px dashed #CA0000;
+    border-radius: 3px;
+}
 .time, .expcontent {
 	clear: none;
 	float: left;
