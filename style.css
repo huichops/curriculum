@@ -66,6 +66,7 @@ body {
 /* Header */
 header {
 	width: 100%;
+	clear: both;
 }
 
 h3 {
@@ -152,20 +153,66 @@ section p {
 
 #experience article {
 	float: left;
-	clear: left;
-	margin-left: 15px;
-	max-width: 400px;
-	min-width: 200px;
+	clear: both;
+	margin-left: 0;
+	max-width: 700px;
+	margin-bottom: 20px;
 }
 
 #experience h2 {
+	width: 150px;
+	margin: 5px 0;
 	font-weight: bold;
 }
 
 #experience h3 {
+	width: 200px;
 	font-size: 0.8em;
-	padding: 3px 5px;
-	border-radius: 3px;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+#experience p {
+	margin: 0;
+	text-indent: 0;
+} 
+
+#experience a {
+    text-decoration: none;
+    color: #555; 
+    border-bottom: 1px dashed #555;
+	-moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+#experience a:hover {
+    color: #CA0000; 
+    background-color: #FFEE55;
+    border-bottom: 1px dashed #CA0000;
+    border-radius: 3px;
+}
+.time, .expcontent {
+	clear: none;
+	float: left;
+}
+
+.time {
+	margin-top: 10px;
+}
+
+time {
+	clear: left;
+	float: left;
+	display: block;
+	min-width: 120px;
+	text-align: center;
+	font-size: 0.8em;
+	vertical-align: middle;
+}
+
+#hobbies li {
+	margin-left: 20px;
+	padding: 5px 0;
 }
 
 .expand {
@@ -177,59 +224,9 @@ section p {
 }
 
 .html5 {
-	width: 65%;
+	width: 85%;
     -moz-animation: html5 1.5s ease-out;
     -webkit-animation: html5 1.5s ease-out;
-}
-
-.css {
-	width: 60%;
-	-moz-animation: css 2s ease-out;
-    -webkit-animation: css 2s ease-out;
-}
-
-.js {
-	width: 45%;
-	-moz-animation: js 2s ease-out;
-    -webkit-animation: js 2s ease-out;
-}
-
-.jquery {
-	width: 10%;
-	-moz-animation: jquery 2s ease-out;
-    -webkit-animation: jquery 2s ease-out;
-}
-.php {
-	width: 20%;
-	-moz-animation: php 2s ease-out;
-    -webkit-animation: php 2s ease-out;
-}
-.cake {
-	width: 15%;
-	-moz-animation: cake 2s ease-out;
-    -webkit-animation: cake 2s ease-out;
-}
-.c {
-	width: 20%;
-	-moz-animation: c 2s ease-out;
-    -webkit-animation: c 2s ease-out;
-}
-.java {
-	width: 10%;
-	-moz-animation: java 2s ease-out;
-    -webkit-animation: java 2s ease-out;
-}
-
-.crafty {
-	width: 15%;
-	-moz-animation: crafty 2s ease-out;
-    -webkit-animation: crafty 2s ease-out;
-}
-
-.mysql {
-	width: 30%;
-	-moz-animation: mysql 2s ease-out;
-    -webkit-animation: mysql 2s ease-out;
 }
 
 @-moz-keyframes html5 {
@@ -238,7 +235,7 @@ section p {
     }
 
     100% {
-        width: 65%;
+        width: 85%;
     };
 }
 
@@ -248,10 +245,322 @@ section p {
     }
 
     100% {
-        width: 65%;
+        width: 85%;
     };
 }
 
+.css {
+	width: 70%;
+	-moz-animation: css 2s ease-out;
+    -webkit-animation: css 2s ease-out;
+}
+
+@-moz-keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-webkit-keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+
+.js {
+	width: 55%;
+	-moz-animation: js 2s ease-out;
+    -webkit-animation: js 2s ease-out;
+}
+
+@-moz-keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
+    };
+}
+
+@-webkit-keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
+    };
+}
+
+.jquery {
+	width: 30%;
+	-moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+
+@-moz-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    };
+}
+
+@-webkit-keyframes jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    };
+}
+
+.php {
+	width: 35%;
+	-moz-animation: php 2s ease-out;
+    -webkit-animation: php 2s ease-out;
+}
+
+@-moz-keyframes php {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 35%;
+    };
+}
+
+@-webkit-keyframes php {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 35%;
+    };
+}
+
+.cake {
+	width: 20%;
+	-moz-animation: cake 2s ease-out;
+    -webkit-animation: cake 2s ease-out;
+}
+
+@-moz-keyframes cake {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+@-webkit-keyframes cake {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+.c {
+	width: 20%;
+	-moz-animation: c 2s ease-out;
+    -webkit-animation: c 2s ease-out;
+}
+
+@-moz-keyframes c {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+@-webkit-keyframes c {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+.java {
+	width: 25%;
+	-moz-animation: java 2s ease-out;
+    -webkit-animation: java 2s ease-out;
+}
+
+@-moz-keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 25%;
+    };
+}
+
+@-webkit-keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 25%;
+    };
+}
+
+
+.crafty {
+	width: 20%;
+	-moz-animation: crafty 2s ease-out;
+    -webkit-animation: crafty 2s ease-out;
+}
+
+@-moz-keyframes crafty {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+@-webkit-keyframes crafty {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    };
+}
+
+
+.mysql {
+	width: 45%;
+	-moz-animation: mysql 2s ease-out;
+    -webkit-animation: mysql 2s ease-out;
+}
+
+@-moz-keyframes mysql {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 45%;
+    };
+}
+
+@-webkit-keyframes mysql {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 45%;
+    };
+}
+
+
+@media only screen and (max-width: 740px) {  
+ 	section {
+ 		font-size: 0.95em;
+ 	}
+
+ 	#skills dl dd {
+		max-width: 350px;
+	}
+}  
+
+
+@media only screen and (max-width: 570px) {  
+
+ 	#skills dl dd {
+		max-width: 300px;
+	}
+
+	section h1 {
+		font-size: 1.4em;
+	}
+} 
+
+
+@media only screen and (max-width: 570px) {  
+
+ 	#skills dl dd {
+		max-width: 300px;
+	}
+
+	section h1 {
+		font-size: 1.4em;
+	}
+
+	header {
+		font-size: 0.9em;
+		text-align: center;
+	}
+
+	.time, expcontent {
+		float: none;
+	}
+	time {
+		clear: none;
+		text-align: left;
+		min-width: 80px;
+	}
+} 
+
+@media only screen and (max-width: 320px) {  
+
+ 	#skills dl dd {
+		max-width: 200px;
+	}
+
+	#skills dl {
+		margin-left: 5px;
+	}
+
+	body {
+		padding-left: 25px;
+		font-size: 1.2 em;
+		border-left: 10px solid #CA0000;
+	}
+
+	section h1 {
+		margin-bottom: 10px;
+	}
+
+	section p {
+		font-size: 0.8em;
+	}
+	#experience article {
+	}
+} 
 
 .clearfix {
 	display: inline-block;
